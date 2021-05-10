@@ -45,9 +45,6 @@ export default env => {
       ]
     },
     plugins: [
-      new CleanWebpackPlugin({
-        cleanOnceBeforeBuildPatterns: undefined,
-      }),
       new GasPlugin({
         comments: false,
       })

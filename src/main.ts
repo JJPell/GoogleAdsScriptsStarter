@@ -5,11 +5,17 @@ interface TotalEntities {
   keywords: number;
 }
 
+/**
+ * Script entry point
+ */
 function  main() {
   // Execute accountMain function for all accounts within MCC account
   AdsManagerApp.accounts().executeInParallel('process');
 }
 
+/**
+ * Runs concurrently for each account under your MCC account
+ */
 function accountMain() {
   const account = AdsApp.currentAccount();
   const campaigns = AdsApp.campaigns().get().totalNumEntities();
@@ -27,6 +33,9 @@ function accountMain() {
   logTotalEntities(account, totalEntities);
 }
 
+/**
+ * Logs the totals number of campaign, ad group, ads and keyword entities
+ */
 function logTotalEntities(account: GoogleAdsScripts.AdsApp.Account, totalEntities: TotalEntities) {
   const accountName = account.getName();
 

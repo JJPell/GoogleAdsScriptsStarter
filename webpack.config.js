@@ -1,5 +1,4 @@
 const path = require('path');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const GasPlugin = require('gas-webpack-plugin');
 const { name, version } = require('./package.json');
 

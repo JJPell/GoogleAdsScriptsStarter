@@ -1,0 +1,16 @@
+{
+  "exclude": [
+    "./node_modules",
+    "./build"
+  ],
+  "include": [
+    "./src/**/*"
+  ],
+  "compilerOptions": {
+    "target": "es3",
+    "module": "commonjs",
+    "strict": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true
+  }
+}

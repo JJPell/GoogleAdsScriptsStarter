@@ -1,5 +1,5 @@
 {
-  "name": "googleadsscriptstypescriptstarterproject",
+  "name": "googleadsscriptsstarter",
   "version": "1.0.0",
   "description": "A starter project for Google Ads Scripts using Typescript",
   "main": "src/main.ts",

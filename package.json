@@ -34,8 +34,8 @@
     "@babel/plugin-transform-property-literals": "^7.2.0",
     "@babel/preset-env": "^7.7.1",
     "@types/google-ads-scripts": "^1.0.0",
-    "@typescript-eslint/eslint-plugin": "^2.19.0",
-    "@typescript-eslint/parser": "^2.19.0",
+    "@typescript-eslint/eslint-plugin": "^4.22.1",
+    "@typescript-eslint/parser": "^4.22.1",
     "babel-eslint": "^10.0.3",
     "babel-loader": "^8.0.6",
     "babel-plugin-add-module-exports": "^1.0.2",
@@ -49,8 +49,8 @@
     "eslint-webpack-plugin": "^2.5.3",
     "gas-lib": "^2.0.3",
     "gas-webpack-plugin": "^2.0.1",
-    "prettier": "^1.19.1",
-    "ts-loader": "^6.2.1",
+    "prettier": "^2.3.0",
+    "ts-loader": "^9.1.2",
     "webpack": "^5.36.2",
     "webpack-cli": "^4.7.0"
   }

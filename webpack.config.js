@@ -21,6 +21,16 @@ export default env => {
     output: {
       filename: `${outputFilename}.js`,
       path: build,
+      environment: {
+        arrowFunction: false,
+        bigIntLiteral: false,
+        const: false,
+        destructuring: false,
+        dynamicImport: false,
+        forOf: false,
+        module: false,
+      },
+      clean: true,
     },
     resolve: {
       extensions: ['.ts', '.js'],

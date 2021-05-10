@@ -1,4 +1,4 @@
-# GoogleAdsScriptsStarter 😎
+# Google Ads Scripts Starter Project 😎
 This is a starter(template, barebones, skeleton) project for Google Ads Scripts. The aim for this starter project was to improve the developer experience when coding for the Google Ads Scripts environment. It allows you to create scripts using modern ES6+ JavaScript and TypeScript syntax while still being able to build and run your script on the outdated Google Ads Scripts [Rhino Engine](https://en.wikipedia.org/wiki/Rhino_(JavaScript_engine)) (ES3) runtime.
 
 Some of the key advantages of using this project are:

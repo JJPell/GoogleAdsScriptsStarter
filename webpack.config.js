@@ -1,12 +1,13 @@
-const path = require('path');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const GasPlugin = require('gas-webpack-plugin');
-const { name, version } = require('./package.json');
+import { resolve } from 'path';
+import { CleanWebpackPlugin } from 'clean-webpack-plugin';
+import GasPlugin from 'gas-webpack-plugin';
+import { name, version } from './package.json';
 
-const src = path.resolve(__dirname, 'src');
-const build = path.resolve(__dirname, 'build');
+const src = resolve(__dirname, 'src');
+const build = resolve(__dirname, 'build');
 
-module.exports = env => {
+// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
+export default env => {
 
   const defaultOutputFilename = `${name}-${version}`
   const entryFilename = env.entryFilename;

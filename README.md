@@ -50,6 +50,8 @@ function doSomethingToAdGroup(adGroup: AdGroup): void {
 
 ## 🚀 Examples
 
+To use an example simply replace the code within `src/main.ts` with the example code.
+
 * [AdsApp example script](https://gist.github.com/JJPell/7e0b690cac51686c87d346deb28cf545)
 * [AdsManagerApp example script](https://gist.github.com/JJPell/0f8499c762e20f413a20dea1497e1975)
 

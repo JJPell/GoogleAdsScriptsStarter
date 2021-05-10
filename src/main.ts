@@ -6,17 +6,29 @@ interface TotalEntities {
 }
 
 /**
+ * Logs the totals number of campaign, ad group, ads and keyword entities
+ */
+function logTotalEntities(account: GoogleAdsScripts.AdsApp.Account, totalEntities: TotalEntities): void {
+  const accountName = account.getName();
+
+  Logger.log(`${accountName}: Total Campaigns - ${totalEntities.campaigns}`);
+  Logger.log(`${accountName}: Total Ad Groups - ${totalEntities.adGroups}`);
+  Logger.log(`${accountName}: Total Ads - ${totalEntities.ads}`);
+  Logger.log(`${accountName}: Total Keywords - ${totalEntities.keywords}`);
+}
+
+/**
  * Script entry point
  */
-function  main() {
+function  main(): void {
   // Execute accountMain function for all accounts within MCC account
-  AdsManagerApp.accounts().executeInParallel('process');
+  AdsManagerApp.accounts().executeInParallel('accountMain');
 }
 
 /**
  * Runs concurrently for each account under your MCC account
  */
-function accountMain() {
+function accountMain(): void {
   const account = AdsApp.currentAccount();
   const campaigns = AdsApp.campaigns().get().totalNumEntities();
   const adGroups = AdsApp.adGroups().get().totalNumEntities();
@@ -31,18 +43,6 @@ function accountMain() {
   };
 
   logTotalEntities(account, totalEntities);
-}
-
-/**
- * Logs the totals number of campaign, ad group, ads and keyword entities
- */
-function logTotalEntities(account: GoogleAdsScripts.AdsApp.Account, totalEntities: TotalEntities) {
-  const accountName = account.getName();
-
-  Logger.log(`${accountName}: Total Campaigns - ${totalEntities.campaigns}`);
-  Logger.log(`${accountName}: Total Ad Groups - ${totalEntities.adGroups}`);
-  Logger.log(`${accountName}: Total Ads - ${totalEntities.ads}`);
-  Logger.log(`${accountName}: Total Keywords - ${totalEntities.keywords}`);
 }
 
 // Assigning to global creates a global function within the Google Ads Scripts enviroment

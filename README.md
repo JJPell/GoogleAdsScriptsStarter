@@ -1,5 +1,5 @@
 # Google Ads Scripts Starter Project 😎
-This is a starter(template, barebones, skeleton) project for Google Ads Scripts. The aim for this starter project was to improve the developer experience when coding for the Google Ads Scripts environment. It allows you to create scripts using modern ES6+ JavaScript and TypeScript syntax while still being able to build and run your script on the outdated Google Ads Scripts [Rhino Engine](https://en.wikipedia.org/wiki/Rhino_(JavaScript_engine)) (ES3) runtime.
+This is a starter(template, bare-bones, skeleton) project for Google Ads Scripts. The aim for this starter project was to improve the developer experience when coding for the Google Ads Scripts environment. It allows you to create scripts using modern ES6+ JavaScript and TypeScript syntax while still being able to build and run your script on the outdated Google Ads Scripts [Rhino Engine](https://en.wikipedia.org/wiki/Rhino_(JavaScript_engine)) (ES3) runtime.
 
 Some of the key advantages of using this project are:
 
@@ -15,7 +15,7 @@ Some of the key advantages of using this project are:
 Once you have cloned this repository and ran `npm install` all that is required to do the following to build and deploy your script.
 
 1) Run the `npm run build`
-2) Copy and paste the compiled javascript file within the `build` folder to your google ads script.
+2) Copy and paste the compiled JavaScript file within the `build` folder to your google ads script.
 
 Simple! 
 
@@ -57,5 +57,5 @@ To use an example simply replace the code within `src/main.ts` with the example 
 
 ## 📦 External Packages
 
-You cannot use external packages that require either node.js or brower environment dependencies.
+You cannot use external packages that require either node.js or browser environment dependencies.
 A good rule of thumb is to look at the number of dependencies listed on the npm web page for the package.
